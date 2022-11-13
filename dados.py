@@ -1,19 +1,35 @@
 # Simulador de dados
 
-import random #biblioteca para valores aleatórios
+import random  # biblioteca para valores aleatórios
+import PySimpleGui as sg
+
 
 class Simulador: #classe para simular valor do dado
     def __init__(self):
         self.valor_min = 1 #valor minimo
         self.valor_max = 6 #valor máximo
         self.mensagem = 'Gerar novo valor pro dado: ' #entrada de dados onde se é solicitado ao usuario 
+        
+        #layout
+        sg.theme('DarkAmber')
 
+        self.layout = [
+            [sg.Text('Gerar Valor?')]
+            [sg.Button('sim'),sg.Button('não')]
+        ]
+
+        
     def Iniciar(self): #função iniciar que iniciar a rodada
-        resposta = input(self.mensagem)
+        #criar uma janela
+        self.janela = sg.window('Sistema de dados', layout=self.layout)
+        #ler os valores da tela
+        self.eventos, self.valores = self.janela.Read()
+        
+        #while True:
         try:
-            if resposta == 'sim' or resposta == 's': #solicitando resposta sim ou não com o if else
+            if self.eventos == 'sim' or self.eventos == 's': #solicitando resposta sim ou não com o if else
                 self.ValorDoDado()
-            elif resposta == 'não' or resposta == 'n':
+            elif self.eventos == 'não' or self.eventos == 'n':
                 print('Obrigado por jogar nosso jogo')
             else:
                 print('Por favor digite uma opção válida')
