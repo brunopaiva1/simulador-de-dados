@@ -1,8 +1,8 @@
 # Simulador de dados
 
 import random  # biblioteca para valores aleatórios
-import PySimpleGui as sg
-
+import PySimpleGUI as sg
+import tkinter as sg
 
 class Simulador: #classe para simular valor do dado
     def __init__(self):
