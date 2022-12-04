@@ -22,7 +22,7 @@ class SimuladorDeDados: #classe para simular valor do dado
         #criar uma janela
             self.janela = sg.Window('Sistema de dados', layout=self.layout)
         #ler os valores da tela
-            self.eventos, self.valores = self.janela.read()
+            self.eventos, self.valores = self.janela.Read()
         
             #while True:
             try:
