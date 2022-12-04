@@ -29,9 +29,9 @@ class SimuladorDeDados: #classe para simular valor do dado
                 if self.eventos == 'sim' or self.eventos == 's': #solicitando resposta sim ou não com o if else
                     self.ValorDeDados()
                 elif self.eventos == 'não' or self.eventos == 'n':
-                    print('Obrigado por jogar nosso jogo')
+                    print('Obrigado por jogar nosso jogo!')
                 else:
-                    print('Por favor digite uma opção válida')
+                    print('Por favor digite uma opção válida: ')
             except:
                 print('ERRO!') #mensagem de exessão
 
