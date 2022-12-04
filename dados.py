@@ -20,7 +20,7 @@ class SimuladorDeDados: #classe para simular valor do dado
         
     def Iniciar(self): #função iniciar que iniciar a rodada
         #criar uma janela
-            self.janela = sg.Window('Sistema de dados', layout=self.layout)
+            self.janela = sg.Window('Sistema de dados',layout=self.layout)
         #ler os valores da tela
             self.eventos, self.valores = self.janela.Read()
         
