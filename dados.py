@@ -38,5 +38,5 @@ class SimuladorDeDados: #classe para simular valor do dado
     def ValorDeDados(self):
         print(random.randint(self.valor_min, self.valor_max)) #gerando valor aleatório
 #com base no minimo e maximo
-        simulador = SimuladorDeDados() #chamada da classe
-        simulador.Iniciar() #chamada da função iniciar com o objeto simulador
+simulador = SimuladorDeDados() #chamada da classe
+simulador.Iniciar() #chamada da função iniciar com o objeto simulador
