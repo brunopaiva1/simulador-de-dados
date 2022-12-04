@@ -10,7 +10,7 @@ class SimuladorDeDados: #classe para simular valor do dado
         self.mensagem = 'Gerar novo valor pro dado: ' #entrada de dados onde se é solicitado ao usuario 
         
         #layout
-        sg.theme('DarkBlack')
+        sg.theme('DarkBlue10')
     
         self.layout = [
             [sg.Text('Gerar Valor?')],
