@@ -16,7 +16,6 @@ class SimuladorDeDados: #classe para simular valor do dado
             [sg.Text('Gerar Valor?')],
             [sg.Button('sim'),sg.Button('não')]
         ]
-
         
     def Iniciar(self): #função iniciar que iniciar a rodada
         #criar uma janela
